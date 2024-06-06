@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="header">
+    <div><span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    </div>
+ 
+</div>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="addbook.html">Add Book</a>
+    <a href="cart.html">Cart</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+<div class="form">
+<form action="" method="post">
+    <label for="email">E-Mail :</label>
+    <input type="text" id="email">
+    <label for="password">Password :</label>
+    <input type="text" id="password">
+    <input type="submit" onclick="home()">
+</form>
+</div>
+    <div class="footer">
+        <p>“I can survive well enough on my own – if given the proper reading material.” ― Sarah J. Maas</p>
+        
+    </div>
+</div>
+<script>
+    function home(){
+     window.location.replace="http://127.0.0.1:5500/home.html";
+    }
+function openNav() {
+  document.getElementById("myNav").style.width = "30%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+     
+</body>
+</html>
